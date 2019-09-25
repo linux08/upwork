@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { graphql, compose } from 'react-apollo';
 
 import PropTypes from 'prop-types';
+import { Navigation } from 'react-native-navigation';
 import updateCountry from 'app/data/client/mutation/updateCountry';
 
 class Screen1Logic extends Component {
@@ -52,13 +53,18 @@ class Screen1Logic extends Component {
   };
 
   submit = () => {
-    this.props.updateCountry({
-      variables: {
-        code: 'JA',
-        name: 'Jibbly',
-        continent: 'SkyLand',
-        currency: 'Beanz',
-        emoji: '😂',
+    // this.props.updateCountry({
+    //   variables: {
+    //     code: 'JA',
+    //     name: 'Jibbly',
+    //     continent: 'SkyLand',
+    //     currency: 'Beanz',
+    //     emoji: '😂',
+    //   },
+    // });
+    Navigation.push('upworkDemo', {
+      component: {
+        name: 'Screen2',
       },
     });
   };
