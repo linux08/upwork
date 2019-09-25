@@ -2,13 +2,18 @@
 /* eslint-disable react/forbid-prop-types */
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Navigation } from 'react-native-navigation';
 
 class Screen2Logic extends Component {
   state = {};
 
   submit = () => {
     // eslint-disable-next-line no-console
-    console.warn('Submit');
+    Navigation.push('upworkDemo', {
+      component: {
+        name: 'Screen1',
+      },
+    });
   };
 
   render() {
