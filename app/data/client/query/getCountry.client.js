@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 
 const getCountry = gql`
   query {
-    country(code: "CA") @client {
+    country @client {
       name
       continent
       currency

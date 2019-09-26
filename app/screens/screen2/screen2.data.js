@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import { graphql, compose } from 'react-apollo';
-import getCountry from 'app/data/client/query/getCountry';
+import getCountry from 'app/data/client/query/getCountry.client';
 
 const Screen2Data = ({ toLogic, loading, error, data }) => {
   if (loading) return toLogic({ loading });
