@@ -38,11 +38,11 @@ const UISetUp = {
                   name: 'Screen1',
                 },
               },
-              {
-                component: {
-                  name: 'Screen2',
-                },
-              },
+              // {
+              //   component: {
+              //     name: 'Screen2',
+              //   },
+              // },
             ],
             options: {
               topBar: {
